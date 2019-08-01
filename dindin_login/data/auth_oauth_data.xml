@@ -24,14 +24,14 @@
 
         <!-- client_id自动填入钉钉移动应用的appid -->
         <function model="auth.oauth.provider" name="write">
-            <value eval="[ref('auth_oauth2_dingtalk.provider_dingtalk')]"/>
+            <value eval="[ref('dindin_login.provider_dingtalk')]"/>
             <value model="ir.config_parameter" eval="{
                 'client_id': obj().env['ir.config_parameter'].get_param('ali_dindin.din_login_appid'),
             }"/>
         </function>
 
         <function model="auth.oauth.provider" name="write">
-            <value eval="[ref('auth_oauth2_dingtalk.provider_dingtalk_qr')]"/>
+            <value eval="[ref('dindin_login.provider_dingtalk_qr')]"/>
             <value model="ir.config_parameter" eval="{
                 'client_id': obj().env['ir.config_parameter'].get_param('ali_dindin.din_login_appid'),
             }"/>
