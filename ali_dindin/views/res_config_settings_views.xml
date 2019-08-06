@@ -52,7 +52,7 @@
                         </div>
                     </div> -->
 
-                    <h2>REDIS服务器配置</h2>
+                    <!-- <h2>REDIS服务器配置</h2>
                     <div class="row mt16 o_settings_container">
                         <div class="col-12 col-lg-6 o_setting_box">
                             <div class="o_setting_right_pane">
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <h2>钉钉-模块安装</h2>
                     <div class="row mt16 o_settings_container">
