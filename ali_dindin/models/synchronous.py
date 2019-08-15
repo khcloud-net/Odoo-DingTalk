@@ -82,7 +82,7 @@ class DingDingSynchronous(models.TransientModel):
         """
         departments = self.env['hr.department'].sudo().search(
             [('din_id', '!=', '')])
-        for department in departments:
+        for department in departments.with_progress(msg="正在同步部门员工"):
             emp_offset = 0
             emp_size = 100
             while True:
